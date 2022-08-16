@@ -1,30 +1,92 @@
 
 body {
-    background-color: rgb(131, 171, 206);
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 .header {
     background-color: #1F2937;
     color: aliceblue;
-    padding: 0 48px;
+    padding: 8px 72px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
 }
 
 .header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    padding-top: 8px;
+    margin-bottom: 32px;
 }
 
-.header-logo {
-    font-size: 24px;
-    color: #F9FAF8;
+.header-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.text-container {
+    background-color: #E5E7EB;
+    display: flex;
+    padding: 96px;
+    flex-direction: column;
+}
+
+.quote {
+    display: flex;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.quote-author {
+    display: flex;
+    font-size: 24px;    
+    font-weight: 800;
+    justify-content: flex-end;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.cta-content {
+    background-color: #3882F6;
+    border-radius: 20px;
+}
+
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 ul {
@@ -36,13 +98,7 @@ ul {
 }
 
 a {
-    color: wheat;
+    color: #E5E7EB;
+    text-decoration: none;
 }
 
-.footer {
-    display: flex;
-    background-color: #1F2937;
-    justify-content: center;
-    font-size: 18px;
-    color: #E5E7EB;
-}
