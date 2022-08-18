@@ -6,12 +6,19 @@ body {
     justify-content: space-between;
     font-family: Roboto, sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+.header, .information,
+.text-container, .cta-container,
+.footer {
+    padding: 0 150px;
 }
 
 .header {
     background-color: #1F2937;
     color: aliceblue;
-    padding: 8px 72px;
+    padding-bottom: 64px;
 }
 
 .header-logo {
@@ -24,43 +31,89 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 8px;
-    margin-bottom: 32px;
+    padding: 16px 0;
 }
 
 .header-bottom {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 32px;
-}
-
-.information {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 32px;
+    gap: 32px;
 }
 
-.subtitle {
+.title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.subtext {
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+.header-img {
+    width: 900px;
+    height: 250px;
+    border-radius: 12px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 1px;
+}
+
+.header-button {
+    font-size: 16px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
+    border-style: none;
+    padding: 8px 16px;
+    font-weight: 800;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 0;
+}
+
+.information-text { 
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+}
+
+.information-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;    
+}
+
+.item {
+    text-align: center;
+    max-width: 150px;
+    gap: 8px;
+}
+
+.item-img {
+    width: 150px;
+    height: 150px;
 }
 
 .text-container {
     background-color: #E5E7EB;
-    display: flex;
-    padding: 96px;
-    flex-direction: column;
+}
+
+.text{
+    margin: 64px 0;
 }
 
 .quote {
-    display: flex;
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
+    font-weight: 100;
 }
 
 .quote-author {
@@ -70,15 +123,36 @@ body {
     justify-content: flex-end;
 }
 
-.cta-container {
+.cta-content {
     display: flex;
-    justify-content: center;
-    padding: 32px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
+    padding: 24px 64px;
+    align-items: center;
+    margin: 32px 0;
+    justify-content: space-between;
 }
 
-.cta-content {
+.cta-text {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.cta-subtext {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.cta-button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 800;
+    font-size: 16px;
+    border-color: white;
+    color: white;
     background-color: #3882F6;
-    border-radius: 20px;
 }
 
 .footer {
@@ -87,6 +161,7 @@ body {
     justify-content: center;
     font-size: 18px;
     color: #E5E7EB;
+    padding: 32px;
 }
 
 ul {
@@ -100,5 +175,6 @@ ul {
 a {
     color: #E5E7EB;
     text-decoration: none;
+    font-size: 18px;
 }
 
